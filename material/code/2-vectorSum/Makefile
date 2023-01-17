@@ -10,7 +10,7 @@ OBJSUMF := $(patsubst %.c,%.exec,$(wildcard src/*.c))
 
 all: main.o vsum
 	@echo "Compiled!"
-	mv src/*.exec $(SCRATCH)
+#	mv src/*.exec $(SCRATCH)
 
 %.exec: %.o
 	$(CC) $(CFLAGS) -o $@ $< main.o
